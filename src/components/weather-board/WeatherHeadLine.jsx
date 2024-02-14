@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import pin from "../../assets/img/pin.png";
+import { WeatherContext } from "../../context";
 const WeatherHeadLine = () => {
+  const { weatherData } = useContext(WeatherContext);
   return (
     <div>
       <div className="max-md:flex items-center justify-between md:-mt-10">
